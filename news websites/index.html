@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebarIconToggle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+     
+    <div class="navbar">
+           
+        <div class="logo border">
+            <img src="logo2.png"alt="company-logo">
+        </div>
+
+        <div class="nav-search">
+            <input id="search-text" placeholder="e.g.science"class="news-input">
+            <button id="search-button" class="search-button">search</button>
+        </div>
+
+    </div>
+</header>
+
+    <div class="herose-section"></div>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+
+         <div class="spinner diagonal part-1"></div>
+          <div class="spinner diagonal part-2"></div>
+          <div class="spinner horizontal"></div>
+           
+    </label>
+
+    <div id="sidebarMenu">
+
+        <ul class="sidebarMenuInner">
+            <div class="logo border1">
+                <img src="Untitled design.png"alt="company-logo" id="img-size">
+          <li>@Raushan kumar <span> News-APP </span></li>
+
+            </div>
+    <a href="#" onclick="reload()"><li class="hover-link sidebariconToggle-items" id="Dashboard"  onclick="onNavItemClick('Dashboard')"> Dashboard</li>  </a> 
+        <li class="hover-link sidebariconToggle-items" id="IPL"  onclick="onNavItemClick('IPL')"> IPL</li>
+        <li class="hover-link sidebariconToggle-items" id="Finance" onclick="onNavItemClick('Finance')"> Finance</li>
+        <li class="hover-link sidebariconToggle-items" id="politics" onclick="onNavItemClick('politics')">politics</li>
+        <li class="hover-link sidebariconToggle-items" id="technology" onclick="onNavItemClick('technology')">technology</li>
+
+         
+          <!-- Social Media Section -->
+    <li class="sidebar-social-media">
+        <a href="https://github.com/myselfraushan7631" target="_blank" class="social-icon"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/raushan-kumar-a1a6b7251/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/RaviRau76055982?t=ELkKDrOUDR2_BO3SUJ8wUg&s=09" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100075929245989&mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/myselfraushan_043?igsh=NTlwd3F1bDlybnlh" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+    </li> 
+              
+        
+  </ul>
+
+    </div>
+   
+
+    <main>
+        <div class="cards-container container-flex" id="cards-container">
+            
+        </div>
+    </main>
+    
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
